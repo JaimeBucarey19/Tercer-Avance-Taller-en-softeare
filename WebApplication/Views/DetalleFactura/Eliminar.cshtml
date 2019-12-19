@@ -1,0 +1,115 @@
+﻿@model WebApplication.Modules.DetalleFactura.DetalleFactura
+
+@{
+    ViewBag.Title = "Eliminar";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-title">
+                <h5>Eliminar Factura</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <form method="post" id="form" class="form-horizontal">
+                    <dl class="dl-horizontal">
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.FacturaId)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.FacturaId)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Precio)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Precio)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cantidad)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Cantidad)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MontoNeto)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.MontoNeto)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Iva)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Iva)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Descuento)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Descuento)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.ImpuestoAdicional)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.ImpuestoAdicional)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Total)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Total)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Descripcion)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Descripcion)
+                        </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions ">
+                            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+                            @Html.ActionLink("Atras", "RegistroDetalleFactura", new { @class = "btn btn-success" }, new { @class = "btn btn-success" })
+                        </div>
+
+
+                    }
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

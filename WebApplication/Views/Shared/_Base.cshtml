@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!--Inicio CSS Caratula-->
+    <link type="text/css" href="~/Scripts/media/css/caratula.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Scripts/media/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Toastr style -->
+    <link href="~/Scripts/media/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="~/Scripts/media/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <!-- Data Tables -->
+    <link href="~/Scripts/media/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+
+    <link href="~/Scripts/media/css/plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="~/Scripts/media/css/browser.css" rel="stylesheet">
+    <!--RenderSection("Css")-->
+    <link rel="stylesheet" type="text/css" href="~/Scripts/media/css/ui.dynatree.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/media/js/plugins/editable/bootstrap-editable.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/media/css/plugins/bootstrap-fileinput/fileinput.css" />
+    <link type="text/css" href="~/Scripts/media/css/caratula.css" rel="stylesheet">
+    <!--<link href="~/Scripts/media/css/caratula.css" media="all" rel="stylesheet" type="text/css" />-->
+
+    <link href="~/Scripts/media/css/animate.css" rel="stylesheet">
+    <link href="~/Scripts/media/css/style.css" rel="stylesheet">
+
+    <!-- Mainly scripts -->
+    <script src="~/Scripts/media/js/jquery-2.1.1.js"></script>
+    <script src="~/Scripts/media/js/bootstrap.min.js"></script>
+    <script src="~/Scripts/media/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/Scripts/media/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="~/Scripts/media/js/inspinia.js"></script>
+    <script src="~/Scripts/media/js/plugins/pace/pace.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/media/js/jquery-ui-1.10.4.min.js"></script>
+    <!-- Toastr script -->
+    <script src="~/Scripts/media/js/plugins/toastr/toastr.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="~/Scripts/media/js/plugins/sweetalert/sweetalert.min.js"></script>
+    <!-- Data Tables -->
+    <script src="~/Scripts/media/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="~/Scripts/media/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="~/Scripts/media/js/plugins/dataTables/dataTables.responsive.js"></script>
+    <script src="~/Scripts/media/js/plugins/dataTables/dataTables.tableTools.min.js"></script>
+    <script src="~/Scripts/media/js/plugins/dataTables/dataTables.rowsGroup.js"></script>
+    <!-- iCheck -->
+    <script src="~/Scripts/media/js/plugins/iCheck/icheck.min.js"></script>
+    <!-- Data picker -->
+    <script type="text/javascript" src="~/Scripts/media/js/locales/bootstrap-datepicker.es.js" charset="UTF-8"></script>
+    <script src="~/Scripts/media/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+    <!-- Date range use moment.js same as full calendar plugin -->
+    <script src="~/Scripts/media/js/plugins/fullcalendar/moment.min.js"></script>
+    <!-- Date range picker -->
+    <script src="~/Scripts/media/js/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Clock picker -->
+    <script src="~/Scripts/media/js/plugins/clockpicker/clockpicker.js"></script>
+    <!-- Peity -->
+    <script src="~/Scripts/media/js/plugins/peity/jquery.peity.min.js"></script>
+    <!-- Peity -->
+    <script src="~/Scripts/media/js/demo/peity-demo.js"></script>
+    <!-- Input Mask-->
+    <script src="~/Scripts/media/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+
+    <script src="~/Scripts/jquery.validate.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <!--RenderSection("Js")-->
+    <script type="text/javascript" src="~/Scripts/media/js/jquery.dynatree.js"></script>
+    <!-- Typehead -->
+    <script src="~/Scripts/media/js/plugins/typehead/bootstrap3-typeahead.min.js"></script>
+    <!-- editable -->
+    <script src="~/Scripts/media/js/plugins/editable/bootstrap-editable.min.js"></script>
+    <!-- input bootstrap -->
+    <script src="~/Scripts/media/js/plugins/bootstrap-fileinput/fileinput.js"></script>
+    <!--BlockUI
+    <script src="~/Scripts/media/js/plugins/blockUI/jquery.blockUI.js"></script>
+    -->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <img alt="image" src="~/Scripts/media/img/senainfo/logo.png">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear">
+                                    <span class="block m-t-xs">
+                                        <strong id="desc_usuario" class="font-bold">@ViewBag.Nombre @ViewBag.Apellido</strong>
+                                        <br><strong>@ViewBag.Rol</strong>
+                                    </span> <span class="text-muted text-xs block"><b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <!--<li><a href="profile.html">Profile</a></li>-->
+                                <!--<li><a href="contacts.html">Contacts</a></li>-->
+                                <li class="active">
+                                    <a href="/Proyecto/SeleccionarProyecto"><i class="fa fa-exchange"></i> Cambiar de Proyecto</a>
+                                </li>
+                                <li>
+                                    <a href="/cambiar_password"><i class="fa fa-key"></i> Cambiar contraseña</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="/logout">Salir</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">FC</div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-home"></i> <span class="nav-label">Inicio</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-usd"></i> <span class="nav-label">Contabilidad</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="/Contabilidad/PlanCuenta">Plan de Cuentas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-usd"></i> <span class="nav-label">Egreso</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="/Egreso/IngresarEgreso">Ingresar Egreso</a></li>
+                            <li><a href="/Egreso/IngresarEgresoTraspaso">Ingresar Egreso-Traspaso</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Parametros</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" style="">
+                            <li>
+                                <a href="#">Remuneración <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="/Parametros/PartidasSalario">Partida Salario</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-book"></i> <span class="nav-label">Documentos</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" style="">
+                            <li>
+                                <a href="#">Administrar Documentos<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="/Documento/TipoDocumento">Tipos de Documento</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#"><i class="fa fa-file-code-o"></i> <span class="nav-label">Remuneraciones</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li>
+                                <a href="#">Liquidacion <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="/Remuneracion/IngresarRemuneracion">Ingresar Liquidacion Sueldo</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Boletas Honorarios <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="/Remuneracion/BoletaHonorarios">Ingresar Boleta Honorarios</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-university"></i> <span class="nav-label">Banco</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="/Banco/Conciliacion">Conciliacion Bancaria</a></li>
+                            <li><a href="/Banco/CargarCartola"><i class="fa fa-upload"></i> Subir Cartola Bancaria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-usd"></i> <span class="nav-label">Revisión Rendiciones</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="/WfRendicion/Index">Rendiciones</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-usd"></i> <span class="nav-label">Rendicion Oca</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="/WfRendicion/IndexRendicionOca">Mis Rendiciones</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-truck"></i> <span class="nav-label">Inventario</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="/Inventario/PorInventariar">Por Invetariar</a></li>
+                        </ul>
+                    </li>
+                    <!--
+    <li>
+        <a href="#"><i class="fa fa-book"></i> <span class="nav-label">Libros</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="{% url libros.views.ingresar_libro empresa_id %}">Crear Libro</a></li>
+            <li><a href="{% url libros.views.ingresar_periodo empresa_id %}">Crear Periodo</a></li>
+            <li><a href="{% url libros.views.gestion_libro empresa_id %}">Gestion Libro</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-file-code-o"></i> <span class="nav-label">Compras</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Factura <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url compras.views.ingresar_factura empresa_id %}">Ingresar Factura</a></li>
+                    <li><a href="{% url compras.views.index_facturas empresa_id %}">Ver Documentos</a></li>
+                </ul>
+            </li>
+            <!--
+            <li>
+                <a href="#">Nota Crédito <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                     <li><a href="{% url compras.views.ingresar_factura empresa_id %}">Ingresar Nota Crédito</a></li>
+                    -
+                    <li><a href="{% url compras.views.ingresar_factura empresa_id %}">Ver Notas Crédito</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Boleta Honorarios <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url compras.views.ingresar_boleta_honorarios empresa_id %}">Ingresar Boletas Honorarios</a></li>
+                    <li><a href="{% url compras.views.index_boleta_honorario empresa_id %}">Ver Boletas Honorarios</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-file-code-o"></i> <span class="nav-label">Ventas</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Factura <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url ventas.views.ingresar_factura empresa_id %}">Ingresar Factura Ventas</a></li>
+                    <li><a href="{% url compras.views.index_facturas empresa_id %}">Ver Documentos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-file-code-o"></i> <span class="nav-label">Remuneraciones</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Liquidacion <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url remuneracion.views.ingresar_liquidacion_sueldo empresa_id %}">Ingresar Liquidacion Sueldo</a></li>
+                    <li><a href="{% url remuneracion.views.ingresar_liquidacion_imposiciones empresa_id %}">Ingresar Liquidacion Imposiciones</a></li>
+                    <li><a href="{% url compras.views.index_facturas empresa_id %}">Ver Documentos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-usd"></i> <span class="nav-label">Contabilidad</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="{% url contabilidad.views.ingresar_plan_cuentas empresa_id %}">Plan de Cuentas</a></li>
+            <li>
+                <a href="#">Comprobante Contable <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url contabilidad.views.comprobante_contable empresa_id %}">Ingresar Comprobante</a></li>
+                    <li><a href="{% url contabilidad.views.index_comprobante_contable empresa_id %}">Ver Comprobantes</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Parametros</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Producto <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url compras.views.ingresar_producto empresa_id %}">Ingresar Producto</a></li>
+                    <li><a href="{% url compras.views.index_productos empresa_id %}">Ver Productos</a></li>
+                    <li><a href="{% url parametros.views.asignar_producto_partida_salario empresa_id %}">Asignar a Partida Salario</a></li>
+                    <li><a href="{% url parametros.views.parametrizar_cuenta_productoRemuneracion empresa_id %}">Parametrizar Productos Remuneracion</a></li>
+
+
+                </ul>
+            </li>
+            <li>
+                <a href="#">Familia Producto <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url compras.views.ingresar_familia_producto empresa_id %}">Ingresar Familia</a></li>
+                    <li><a href="{% url compras.views.index_familia_productos empresa_id %}">Ver Familia Productos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Persona <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url compras.views.guardar_persona empresa_id %}">Ingresar Persona</a></li>
+                    <li><a href="{% url compras.views.index_personas empresa_id %}">Ver Personas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Centros de Costos <span class="fa arrow"></span></a>
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url costos.views.ingresar_centro_costos empresa_id %}">Ingresar Centro De Costo</a></li>
+                    <li><a href="{% url costos.views.index_centro_costos empresa_id %}">Ver Centros De Costos</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Costos</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="{% url compras.views.index_imputacion empresa_id %}">Imputacion</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-usd"></i> <span class="nav-label">Tesoreria</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="{% url egresos.views.index_egresos empresa_id %}">Ver Egresos</a></li>
+            <li><a href="{% url egresos.views.egresos empresa_id %}">Realizar Egreso</a></li>
+            <li><a href="{% url egresos.views.index_anticipos empresa_id %}">Ver Anticipos</a></li>
+            <li><a href="{% url egresos.views.ingresar_anticipo_proveedor empresa_id %}">Realizar Anticipo Proveedor</a></li>
+            <li><a href="{% url egresos.views.index_orden_pago_acreedor empresa_id %}"> Ver Orden Pago Acreedor</a></li>
+            <li><a href="{% url egresos.views.ingresar_orden_pago_acreedor empresa_id %}">Realizar Orden Pago Acreedor</a></li>
+            <li><a href="{% url egresos.views.ingresar_orden_pago_imposiciones empresa_id %}">Realizar Orden Pago Imposiciones</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-university"></i> <span class="nav-label">Banco</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="{% url banco.views.index empresa_id %}">Ver Cuentas Corrientes</a></li>
+            <li><a href="{% url banco.views.agregar_cartola empresa_id %}">Cargar Cartola Bancaria</a></li>
+            <li><a href="{% url banco.views.ver_cartolas empresa_id %}">Ver Cartolas</a></li>
+            <li><a href="{% url banco.views.conciliacion empresa_id %}">Conciliacion Bancaria</a></li>
+            <li><a href="{% url banco.views.periodos_conciliados empresa_id %}">Ver Conciliaciones</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#"><i class="fa fa-outdent"></i> <span class="nav-label">Centralización</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li><a href="{% url centralizacion.views.centralizador empresa_id %}">Centralizar</a></li>
+            <li><a href="{% url centralizacion.views.plantilla_comprobante empresa_id %}">Agregar Plantilla Comprobante</a></li>
+            <li><a href="{% url centralizacion.views.index_plantillas_comprobantes empresa_id %}">Ver Plantillas</a></li>
+        </ul>
+    </li>
+    <!--
+    <li>
+        <a href="#"><i class="fa fa-home"></i> <span class="nav-label">Dashboards</span></span></a>
+    <ul class="nav nav-second-level collapse">
+        <li>
+            <a href="#">Dashboards <span class="fa arrow"></span></a>
+            <ul class="nav nav-third-level">
+                <li><a href="{% url dashboard.views.dashboard_agentes %}">Dashboard Agentes/Vendedores</a></li>
+                <li><a href="{% url dashboard.views.dashboard_innovacion %}">Dashboard Innovación</a></li>
+
+            </ul>
+        </li>
+    </ul>
+    </li>
+    {% if perms.consolaproceso %}
+    <li>
+        <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Gestion de Procesos</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Consola Proceso <span class="fa arrow"></span></a>
+
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url consolaproceso.views.index_consola_admin %}">Consola Admin Procesos</a></li>
+                    <li><a href="{% url consolaproceso.views.index_consola_user empresa_id %}">Consola Procesos</a></li>
+                    <li><a href="{% url consolaproceso.views.index_consola_history_process %}">Historial Casos</a></li>
+
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Diseño de Procesos <span class="fa arrow"></span></a>
+
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url consolaproceso.views.carga_archivo_modelo %}">Carga de Modelo Proceso</a></li>
+                    <li><a href="{% url consolaproceso.views.asignacion_nodo_implementacion %}">Asignacion de Actividades Implementacion</a></li>
+                    <li><a href="{% url consolaproceso.views.gen_module_by_wf %}">Generación de Componente de Proceso</a></li>
+                    <li><a href="{% url consolaproceso.views.asignacion_entity_object_activity %}">Asignacion de Actividad-Entidad de Negocio</a></li>
+                    <li><a href="{% url consolaproceso.views.create_forms_activity %}">Creacion Formulario</a></li>
+                    <li><a href="{% url consolaproceso.views.asignar_form_activity %}">Asignar Formulario-Actividad</a></li>
+
+
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Calidad del Modelo Proceso<span class="fa arrow"></span></a>
+
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url metrica.views.index_metrica %}">Metricas del Proceso</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </li>
+    {%endif%}
+    {% if perms.parametros %}
+    <li>
+        <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Carga Datos</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Carga de Datos <span class="fa arrow"></span></a>
+
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url carga_datos.views.index_form_entities %}">Carga Datos</a></li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+    {%endif%}
+    {% if perms.account %}
+    <li>
+        <a href="#"><i class="fa fa-cogs"></i> <span class="nav-label">Gestión Usuarios</span><span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level collapse">
+            <li>
+                <a href="#">Usuarios <span class="fa arrow"></span></a>
+
+                <ul class="nav nav-third-level">
+                    <li><a href="{% url account.views.index %}">Ver Usuarios</a></li>
+                    <li><a href="{% url account.views.agregar_usuario %}">Agregar Usuario</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+    {% endif %}-->
+                </ul>
+
+            </div>
+        </nav>-->
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i>  <span class="label label-warning">0</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages"></ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i>  <span class="label label-primary">0</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts"></ul>
+                        </li>
+                        <li>
+                            <a href="/logout"><i class="fa fa-sign-out"></i> Salir</a>
+                        </li>
+                        <li>
+                            <a class="right-sidebar-toggle">
+                                <i class="fa fa-tasks"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-12">
+                    <h2>@ViewBag.Title</h2>
+                </div>
+                <div class="col-lg-2">
+                </div>
+            </div>
+            @RenderBody()
+            <div class="footer">
+                <div class="pull-right">
+                    <strong>sename.cl</strong>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--RenderSection("ExtendJs")-->
+    <script type="text/javascript">
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "onclick": null,
+            "showDuration": "0",
+            "hideDuration": "0",
+            "timeOut": "0",
+            "extendedTimeOut": "0",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
+
+    @if (@ViewData["Info"] != null)
+    {
+
+        <script type="text/javascript">
+        var info= @Html.Raw(Json.Encode(this.@ViewBag.Info));
+        $.each(info, function () {
+
+            var tag = this.tags;
+            var msg = this.message;
+            switch (tag) {
+                case 'success':
+                    toastr.success(msg, "Éxito");
+                    break;
+                case 'save success':
+                    swal({ title: "Éxito", text: msg, type: "success" });
+                    break;
+                case 'warning':
+                    toastr.warning(msg, "Advertencia");
+                    break;
+                case 'error':
+                    toastr.error(msg, "Error");
+                    break;
+                case 'save error':
+                    swal("Error", msg, "error");
+                    break;
+                case 'info':
+                    toastr.info(msg, "Información");
+                    break;
+                default: title = '??';
+                    break;
+            }
+        });
+        </script>
+    }
+    <script type="text/javascript">
+            $(document).ready(function () {
+                $('.i-checks').iCheck({
+                    checkboxClass: 'icheckbox_square-green',
+                    radioClass: 'iradio_square-green',
+                });
+            });
+			$('.clockpicker').clockpicker();
+            var active_menu=$('a[href$="@Request.RawUrl"]');
+            active_menu.parents("li").addClass("active");
+    </script>
+</body>
+
+</html>

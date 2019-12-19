@@ -1,0 +1,436 @@
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\WebApplication.dll.config
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\WebApplication.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\WebApplication.pdb
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\csc.exe
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\csc.exe.config
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\csc.rsp
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\csi.exe
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\csi.exe.config
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\csi.rsp
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.AppContext.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Console.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.IO.Compression.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.IO.Pipes.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Security.Claims.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.ValueTuple.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\vbc.exe
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\vbc.exe.config
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\vbc.rsp
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Antlr3.Runtime.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\EntityFramework.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Options.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Npgsql.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Remotion.Linq.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Buffers.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Collections.Immutable.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.ComponentModel.Annotations.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Interactive.Async.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Memory.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Numerics.Vectors.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.ValueTuple.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Helpers.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Mvc.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Optimization.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Razor.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.WebPages.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\WebGrease.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\EntityFramework.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Options.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Npgsql.pdb
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Npgsql.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Npgsql.EntityFrameworkCore.PostgreSQL.pdb
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Remotion.Linq.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Buffers.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Collections.Immutable.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Interactive.Async.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Memory.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Numerics.Vectors.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.ValueTuple.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Helpers.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Mvc.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Optimization.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.Razor.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.WebPages.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Newtonsoft.Json.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\es\System.Web.Razor.resources.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\EntityFramework6.Npgsql.dll
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\bin\EntityFramework6.Npgsql.xml
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.Migrations.InitialCreate.resources
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.GenerateResource.cache
+C:\Users\ricardo\source\repos\WebApplication\WebApplication\obj\Debug\WebApplication.Migrations.InitialCreate1.resources
+D:\cosas de programacion\WebApplication\WebApplication\bin\WebApplication.dll.config
+D:\cosas de programacion\WebApplication\WebApplication\bin\WebApplication.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\WebApplication.pdb
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\csc.exe
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\csc.exe.config
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\csc.rsp
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\csi.exe
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\csi.exe.config
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\csi.rsp
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.Managed.Core.targets
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.AppContext.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Console.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.IO.Compression.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.IO.FileSystem.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.IO.Pipes.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Security.AccessControl.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Security.Claims.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Security.Principal.Windows.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.ValueTuple.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Xml.XmlDocument.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Xml.XPath.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\vbc.exe
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\vbc.exe.config
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\vbc.rsp
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\VBCSCompiler.exe
+D:\cosas de programacion\WebApplication\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+D:\cosas de programacion\WebApplication\WebApplication\bin\Antlr3.Runtime.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\EntityFramework.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\EntityFramework.SqlServer.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\EntityFramework6.Npgsql.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Relational.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Abstractions.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Memory.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Options.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Primitives.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Newtonsoft.Json.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Npgsql.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\Remotion.Linq.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Buffers.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Collections.Immutable.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.ComponentModel.Annotations.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Diagnostics.DiagnosticSource.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Interactive.Async.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Memory.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Numerics.Vectors.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Threading.Tasks.Extensions.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.ValueTuple.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Helpers.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Mvc.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Optimization.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Razor.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.WebPages.Deployment.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.WebPages.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.WebPages.Razor.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\WebGrease.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\EntityFramework.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\EntityFramework.SqlServer.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\EntityFramework6.Npgsql.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Relational.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Abstractions.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Caching.Memory.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Options.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.Extensions.Primitives.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Npgsql.pdb
+D:\cosas de programacion\WebApplication\WebApplication\bin\Npgsql.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Npgsql.EntityFrameworkCore.PostgreSQL.pdb
+D:\cosas de programacion\WebApplication\WebApplication\bin\Remotion.Linq.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Buffers.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Collections.Immutable.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Diagnostics.DiagnosticSource.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Interactive.Async.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Memory.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Numerics.Vectors.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Threading.Tasks.Extensions.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.ValueTuple.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Helpers.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Mvc.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Optimization.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.Razor.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.WebPages.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.WebPages.Deployment.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\System.Web.WebPages.Razor.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Newtonsoft.Json.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\Antlr3.Runtime.pdb
+D:\cosas de programacion\WebApplication\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\cosas de programacion\WebApplication\WebApplication\bin\es\System.Web.Helpers.resources.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\es\System.Web.Mvc.resources.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\es\System.Web.Optimization.resources.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\es\System.Web.Razor.resources.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\es\System.Web.WebPages.resources.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\cosas de programacion\WebApplication\WebApplication\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\cosas de programacion\WebApplication\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache
+D:\cosas de programacion\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
+D:\cosas de programacion\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
+D:\cosas de programacion\WebApplication\WebApplication\obj\Debug\WebApplication.dll
+D:\cosas de programacion\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
+D:\cosas de programacion\WebApplication\WebApplication\obj\Debug\WebApplication.Migrations.InitialCreate.resources
+D:\cosas de programacion\WebApplication\WebApplication\obj\Debug\WebApplication.csproj.GenerateResource.cache
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\obj\Debug\WebApplication.csproj.CoreCompileInputs.cache
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\obj\Debug\WebApplication.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\obj\Debug\WebApplication.pdb
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\WebApplication.dll.config
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\WebApplication.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\WebApplication.pdb
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\csc.exe
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\csc.exe.config
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\csc.rsp
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\csi.exe
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\csi.exe.config
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\csi.rsp
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.Managed.Core.targets
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.AppContext.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Collections.Immutable.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Console.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.IO.Compression.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.IO.FileSystem.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.IO.Pipes.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Reflection.Metadata.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Security.AccessControl.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Security.Claims.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Security.Principal.Windows.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.ValueTuple.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Xml.XmlDocument.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Xml.XPath.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\vbc.exe
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\vbc.exe.config
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\vbc.rsp
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\VBCSCompiler.exe
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\roslyn\VBCSCompiler.exe.config
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Antlr3.Runtime.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\EntityFramework.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\EntityFramework.SqlServer.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\EntityFramework6.Npgsql.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.EntityFrameworkCore.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Relational.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Caching.Abstractions.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Caching.Memory.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Configuration.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Logging.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Options.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Primitives.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Web.Infrastructure.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Newtonsoft.Json.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Npgsql.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Remotion.Linq.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Buffers.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Collections.Immutable.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.ComponentModel.Annotations.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Diagnostics.DiagnosticSource.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Interactive.Async.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Memory.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Numerics.Vectors.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Threading.Tasks.Extensions.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.ValueTuple.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Helpers.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Mvc.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Optimization.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Razor.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.WebPages.Deployment.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.WebPages.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.WebPages.Razor.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\WebGrease.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\EntityFramework.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\EntityFramework.SqlServer.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\EntityFramework6.Npgsql.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.EntityFrameworkCore.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.EntityFrameworkCore.Relational.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Caching.Abstractions.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Caching.Memory.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Configuration.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Logging.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Options.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.Extensions.Primitives.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Npgsql.pdb
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Npgsql.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Npgsql.EntityFrameworkCore.PostgreSQL.pdb
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Remotion.Linq.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Buffers.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Collections.Immutable.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Diagnostics.DiagnosticSource.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Interactive.Async.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Memory.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Numerics.Vectors.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Threading.Tasks.Extensions.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.ValueTuple.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Helpers.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Mvc.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Optimization.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.Razor.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.WebPages.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.WebPages.Deployment.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\System.Web.WebPages.Razor.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Newtonsoft.Json.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Antlr3.Runtime.pdb
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\es\System.Web.Helpers.resources.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\es\System.Web.Mvc.resources.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\es\System.Web.Optimization.resources.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\es\System.Web.Razor.resources.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\es\System.Web.WebPages.resources.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\obj\Debug\WebApplication.Migrations.initialcreate.resources
+D:\cosas de programacion\WebApplication\web aplication\WebApplication\obj\Debug\WebApplication.csproj.GenerateResource.cache

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<WebApplication.Modules.DetalleFactura.DetalleFactura>
+
+@{
+    ViewBag.Title = "Listado De Detalles Facturas";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="container table-responsive">
+        <div class="row">
+            <div class="ibox-content">
+                <div class="col-sm-2">
+                    <a href="https://localhost:44394/MenuRegistro/MenuRegistro" style="background-color:mediumseagreen" class="btn btn-block btn-success">Volver al Menu</a>
+                    <br />
+                </div>
+
+                <div>
+                    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                    <p>Filtre por algun parametro</p>
+                </div>
+                <br />
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.FacturaId)</th>
+                            <th>@Html.DisplayNameFor(model => model.Precio)</th>
+                            <th>@Html.DisplayNameFor(model => model.Cantidad)</th>
+                            <th>@Html.DisplayNameFor(model => model.MontoNeto)</th>
+                            <th>@Html.DisplayNameFor(model => model.Iva)</th>
+                            <th>@Html.DisplayNameFor(model => model.Descuento) </th>
+                            <th>@Html.DisplayNameFor(model => model.ImpuestoAdicional)</th>
+                            <th>@Html.DisplayNameFor(model => model.Total)</th>
+                            <th>@Html.DisplayNameFor(model => model.Descripcion)</th>
+
+
+
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.FacturaId)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Precio)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
+                                <td>@Html.DisplayFor(modelItem => item.MontoNeto)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Iva)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Descuento)</td>
+                                <td>@Html.DisplayFor(modelItem => item.ImpuestoAdicional)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Total)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                                <td>
+
+                                    @Html.ActionLink("Editar", "Editar", new { id = item.Id }, new { @class = "btn btn-success" })
+                                    @Html.ActionLink("Eliminar", "Eliminar", new { id = item.Id }, new { @class = "btn btn-danger" })
+                                    @Html.ActionLink("Detalles", "Detalles", new { id = item.Id }, new { @class = "btn btn-info" })
+                                    @Html.ActionLink("Agregar Detalle", "Agregar Detalle", new { id = item.Id }, new { @class = "btn btn-info" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+</script>

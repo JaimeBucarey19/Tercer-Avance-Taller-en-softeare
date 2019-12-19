@@ -1,0 +1,299 @@
+﻿@model WebApplication.Modules.Factura.Factura
+
+
+@{
+    ViewBag.Title = "Detalle factura";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12 ibox-content">
+            <div class="ibox float-e-margins">
+                <h4>Datos De Factura</h4>
+                <div class="col-lg-4">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Id)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Rut)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Rut)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cliente)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Cliente)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.EstadoFactura)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.EstadoFactura)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Lugar)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Lugar)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Giro)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Giro)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Contacto)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Contacto)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Fecha)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Fecha)
+                        </dd>
+
+
+                    </dl>
+                    @Html.ActionLink("Editar", "EditarF", new { id = Model.Id }, new { @class = "btn btn-success" })
+                </div>
+
+
+            </div>
+        </div>
+        <div id="contenedor_detalle">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <div class="row">
+
+                                <div class="col-sm-2">
+                                    <button type="button" id="guardar" class="btn btn-block btn-success"><i class="fa fa-save"></i>&nbsp; &nbsp;Guardar</button>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <button type="button" id="g" class="btn btn-block btn-success class_add_item">Agregar Detalle</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="contenedor_producto" class="class_contenedor_producto" style="display: none">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title" id="2">
+                    <h5>Detalle de Pedido </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div>
+                                <button class="btn btn-danger btn-circle class_del_item" type="button"><i class="fa fa-minus"></i></button>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">ID Factura</label>
+                                <div class="col-sm-10">
+                                    <input id="id_factura" type="text" class="form-control class_id_factura" name="id_factura" maxlength="200">
+
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="col-sm-2 control-label">Precio</label>
+                                <div class="col-sm-10">
+                                    <input id="id_precio" type="text" value="" placeholder="Precio" class="form-control class_precio" name="id_precio" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Cantidad</label>
+                                <div class="col-sm-10">
+                                    <input id="id_cantidad" type="text" value="" placeholder="Cantidad" class="form-control class_cantidad" name="id_Cantidad" maxlength="200">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Monto Neto</label>
+                                <div class="col-sm-10">
+                                    <input id="id_montoNeto" type="text" value="" placeholder="Monto Neto" class="form-control class_montoNeto" name="id_montoNeto" maxlength="200">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Iva</label>
+                                <div class="col-sm-10">
+                                    <input id="id_iva" type="text" value="" placeholder="Iva" class="form-control class_iva" name="id_iva" maxlength="200">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Descuento</label>
+                                <div class="col-sm-10">
+                                    <input id="id_descuento" type="text" value="" placeholder="Descuento" class="form-control class_descuento" name="id_descuento" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Impuesto Adicional </label>
+                                <div class="col-sm-10">
+                                    <input id="id_impuestoAdicional" type="text" value="" placeholder=" Impuesto Adicional" class="form-control class_impuestoAdicional" name="id_impuestoAdicional" maxlength="200">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Descripcion</label>
+                                <div class="col-sm-10">
+                                    <input id="id_descripcion" type="text" value="" placeholder="Descripcion" class="form-control class_descripcion" name="id_descripcion" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Total</label>
+                                <div class="col-sm-10">
+                                    <input id="id_total" type="text" value="" placeholder="Total" class="form-control class_total" name="id_total" maxlength="200">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        let detalle = 1;
+        function formatNumber(n) {
+            n = String(n).replace(/\D/g, "");
+            return n === '' ? n : Number(n).toLocaleString("es-CL", {
+                style: "currency",
+                currency: "CLP",
+                currencyDisplay: 'symbol',
+                minimumFractionDigits: 0,
+            });
+        }
+        $(".class_add_item").on("click", function () {
+            var contenedor_producto = $("#contenedor_producto").clone();
+            contenedor_producto.attr("id", "contenedor_producto_" + detalle).css("display", "block");
+
+            $("#contenedor_detalle").append(contenedor_producto);
+            detalle += 1;
+
+        });
+        $(document).on("click", ".class_del_item", function () {
+            $("#2").parent().parent().remove();
+            detalle -= 1;
+
+        });
+        $(document).ready(function () {
+            $('#id_factura').val(@Html.ViewBag.FacturaId);
+            $('#id_factura').attr('disabled', 'disabled');
+
+        });
+
+
+        $('#guardar').click(function () {
+
+             if (detalle == 1) {
+                    alert("Debe contener un detalle");
+                    return;
+                }
+
+            let DetalleFactura = [];
+            $('#contenedor_detalle .class_contenedor_producto').each(function () {
+                var detalle = [];
+                detalle["FacturaId"] = $(this).find('.class_id_factura').val();
+                detalle["Precio"] = $(this).find('.class_precio').val();
+                detalle["Cantidad"] = $(this).find('.class_cantidad').val();
+                detalle["MontoNeto"] = $(this).find('.class_montoNeto').val();
+                detalle["Iva"] = $(this).find('.class_iva').val();
+                detalle["Descuento"] = $(this).find('.class_descuento').val();
+                detalle["ImpuestoAdicional"] = $(this).find('.class_impuestoAdicional').val();
+                detalle["Total"] = $(this).find('.class_total').val();
+                detalle["Descripcion"] = $(this).find('.class_descripcion').val();
+
+
+
+                DetalleFactura.push({
+                    "FacturaId": detalle["FacturaId"],
+                    "Precio": detalle["Precio"],
+                    "Cantidad": detalle["Cantidad"],
+                    "MontoNeto": detalle["MontoNeto"],
+                    "Iva": detalle["Iva"],
+                    "Descuento": detalle["Descuento"],
+                    "ImpuestoAdicional": detalle["ImpuestoAdicional"],
+                    "Total": detalle["Total"],
+                    "Descripcion": detalle["Descripcion"],
+                    
+                });
+            });
+            var formData = new FormData();
+            formData.append("DetalleFactura", JSON.stringify(DetalleFactura));
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SaveOrder", "DetalleFactura")',
+                dataType: 'json',
+                data: formData,
+
+                cache: false,
+                    contentType: false,
+                    processData: false,  // Important!
+                    success: function (result) {
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                                $('.confirm').click(function () {
+                                    location.href = result.redirectUrl;
+                                });
+                                return
+                    },
+                    error: function (result){
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                    }
+                });
+
+            });
+
+    });
+        // Recopilar lista de pedidos múltiples para pasar al controlador
+
+</script>
+
+

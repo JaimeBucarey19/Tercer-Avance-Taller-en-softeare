@@ -1,0 +1,288 @@
+﻿@model WebApplication.Modules.Pedido.Pedido 
+
+
+@{
+    ViewBag.Title = "Detalle Pedido";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12 ibox-content">
+            <div class="ibox float-e-margins">
+                <h4>Datos De Pedido</h4>
+                <div class="col-lg-4">
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Id)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cliente)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Cliente)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.TipoServicio)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.TipoServicio)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Lugar)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Lugar)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Maquina)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Maquina)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Fecha)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Fecha)
+                        </dd>
+
+
+                    </dl>
+                    @Html.ActionLink("Editar", "EditarP", new { id = Model.Id }, new { @class = "btn btn-success" })
+                </div>
+
+
+            </div>
+        </div>
+        <div id="contenedor_detalle">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <div class="row">
+
+                                <div class="col-sm-2">
+                                    <button type="button" id="guardar" class="btn btn-block btn-success"><i class="fa fa-save"></i>&nbsp; &nbsp;Guardar</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" id="g" class="btn btn-block btn-success class_add_item">Agregar Detalle</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="contenedor_producto" class="class_contenedor_producto" style="display: none">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title" id="2">
+                    <h5>Detalle de Pedido </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div>
+                                <button class="btn btn-danger btn-circle class_del_item" type="button"><i class="fa fa-minus"></i></button>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">ID Pedido</label>
+                                <div class="col-sm-10">
+                                    <input id="id_pedido" type="text" class="form-control class_id_pedido" name="id_pedido" maxlength="200">
+
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label class="col-sm-2 control-label">Punto Salida</label>
+                                <div class="col-sm-10">
+                                    <input id="id_puntoSalida" type="text" value="" placeholder="Punto Salida" class="form-control class_punto_salida" name="id_puntoSalida" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Punto Llegada</label>
+                                <div class="col-sm-10">
+                                    <input id="id_puntoLlegada" type="text" value="" placeholder="Punto Llegada" class="form-control class_punto_llegada" name="id_puntoLlegada" maxlength="200">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Kilometros</label>
+                                <div class="col-sm-10">
+                                    <input id="id_kilometros" type="text" value="" placeholder="Kilometros" class="form-control class_kilometros" name="id_kilometro" maxlength="200">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Precio Kilometro</label>
+                                <div class="col-sm-10">
+                                    <input id="id_precioKilometro" type="text" value="" placeholder="$ Kilometro" class="form-control class_precio_kilometro" name="id_precioKilometro" maxlength="200">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">N° Cabinas</label>
+                                <div class="col-sm-10">
+                                    <input id="id_NCabina" type="text" value="" placeholder="N° Cabinas" class="form-control class_cabinas_de_peaje" name="id_NCabina" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Descuento</label>
+                                <div class="col-sm-10">
+                                    <input id="id_descuento" type="text" value="" placeholder=" % Descuento" class="form-control class_descuento" name="id_descuento" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Iva</label>
+                                <div class="col-sm-10">
+                                    <input id="id_iva" type="text" value="" placeholder="Iva" class="form-control class_iva" name="id_iva" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Descripcion</label>
+                                <div class="col-sm-10">
+                                    <input id="id_descripcion" type="text" value="" placeholder="Descripcion" class="form-control class_descripcion" name="id_descripcion" maxlength="200">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Total</label>
+                                <div class="col-sm-10">
+                                    <input id="id_total" type="text" value="" placeholder="Total" class="form-control class_valor_total" name="id_total" maxlength="200">
+                                </div>
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        let detalle = 1;
+        function formatNumber(n) {
+            n = String(n).replace(/\D/g, "");
+            return n === '' ? n : Number(n).toLocaleString("es-CL", {
+                style: "currency",
+                currency: "CLP",
+                currencyDisplay: 'symbol',
+                minimumFractionDigits: 0,
+            });
+        }
+        $(".class_add_item").on("click", function () {
+            var contenedor_producto = $("#contenedor_producto").clone();
+            contenedor_producto.attr("id", "contenedor_producto_" + detalle).css("display", "block");
+
+            $("#contenedor_detalle").append(contenedor_producto);
+            detalle += 1;
+
+        });
+        $(document).on("click", ".class_del_item", function () {
+            $("#2").parent().parent().remove();
+            detalle -= 1;
+
+        });
+        $(document).ready(function () {
+            $('#id_pedido').val(@Html.ViewBag.PedidoId);
+            $('#id_pedido').attr('disabled', 'disabled');
+            $('#id_precioKilometro').val('1600');
+            $('#id_precioKilometro').attr('disabled', 'disabled');
+        });
+
+  
+        $('#guardar').click(function () {
+            
+             if (detalle == 1) {
+                    alert("Debe contener un detalle");
+                    return;
+                }
+
+            let DetallePedido = [];
+            $('#contenedor_detalle .class_contenedor_producto').each(function () {
+                var detalle = [];
+                console.log($(this).find('.class_id_pedido').val())
+                detalle["Pedido_Id"] = $(this).find('.class_id_pedido').val();
+                detalle["PuntoSalida"] = $(this).find('.class_punto_salida').val();
+                detalle["PuntoLlegada"] = $(this).find('.class_punto_llegada').val();
+                detalle["Kilometros"] = $(this).find('.class_kilometros').val();
+                detalle["PrecioKilometro"] = $(this).find('.class_precio_kilometro').val();
+                detalle["CabinasDePeaje"] = $(this).find('.class_cabinas_de_peaje').val();
+                detalle["Descuento"] = $(this).find('.class_descuento').val();
+                detalle["Iva"] = $(this).find('.class_iva').val();
+                detalle["Descripcion"] = $(this).find('.class_descripcion').val();
+                detalle["ValorTotal"] = $(this).find('.class_valor_total').val();
+
+               
+                DetallePedido.push({
+                    "Pedido_Id": detalle["Pedido_Id"],
+                    "PuntoSalida": detalle["PuntoSalida"],
+                    "PuntoLlegada": detalle["PuntoLlegada"],
+                    "Kilometros": detalle["Kilometros"],
+                    "PrecioKilometro": detalle["PrecioKilometro"],
+                    "CabinasDePeaje": detalle["CabinasDePeaje"],
+                    "Descuento": detalle["Descuento"],
+                    "Iva": detalle["Iva"],
+                    "Descripcion": detalle["Descripcion"],
+                    "ValorTotal":detalle["ValorTotal"],
+                });
+            });
+            var formData = new FormData();
+            formData.append("DetallePedido", JSON.stringify(DetallePedido));
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("SaveOrder", "DetallePedido")',
+                dataType: 'json',
+                data: formData,
+
+                cache: false,
+                    contentType: false,
+                    processData: false,  // Important!
+                    success: function (result) {
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                                $('.confirm').click(function () {
+                                    location.href = result.redirectUrl;
+                                });
+                                return
+                    },
+                    error: function (result){
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                    }
+                });
+
+            });
+        
+    });
+        // Recopilar lista de pedidos múltiples para pasar al controlador
+
+</script>
+
+

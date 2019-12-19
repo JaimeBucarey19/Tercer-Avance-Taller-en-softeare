@@ -1,0 +1,108 @@
+﻿@model WebApplication.Modules.Factura.Factura
+
+@{
+    ViewBag.Title = "Eliminar";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-title">
+                <h5>Eliminar Factura</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <form method="post" id="form" class="form-horizontal">
+                    <dl class="dl-horizontal">
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Rut)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Rut)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Cliente)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Cliente)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.EstadoFactura)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.EstadoFactura)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Lugar)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Lugar)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Giro)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Giro)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Email)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Contacto)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Contacto)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Fecha)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Fecha)
+                        </dd>
+
+                    </dl>
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions ">
+                            <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+                            @Html.ActionLink("Atras", "RegistroFactura", new { @class = "btn btn-success" }, new { @class = "btn btn-success" })
+                        </div>
+
+
+                    }
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

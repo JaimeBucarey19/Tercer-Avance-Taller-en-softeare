@@ -1,0 +1,182 @@
+﻿@{
+    ViewBag.Title = "Cliente";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox-title">
+                    <h5>Nuevo Cliente</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <form method="post" id="form" class="form-horizontal">
+
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">(*)Run</label>
+                            <div class="col-sm-10">
+                                <input id="id_run" type="text" class="form-control entry" name="id_run" maxlength="13" data-mask="99.999.999-*">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Nombre o Razon Social</label>
+                            <div class="col-sm-10">
+                                <input id="id_nombre" type="text" class="form-control entry" name="id_nombre" maxlength="200">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Apellido</label>
+                            <div class="col-sm-10">
+                                <input id="id_apellido" type="text" class="form-control entry" name="id_apellido" maxlength="200">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Direccion</label>
+                            <div class="col-sm-10">
+                                <input id="id_direccion" type="text" class="form-control entry" name="id_direccion" maxlength="200">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Telefono</label>
+                            <div class="col-sm-10">
+                                <input id="id_telefono" type="text" class="form-control entry" name="id_telefono" maxlength="11" data-max="+99999999999">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input id="id_email" type="text" class="form-control entry" name="id_email" maxlength="200">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Giro</label>
+                            <div class="col-sm-10">
+                                <input id="id_giro" type="text" class="form-control entry" name="id_giro" maxlength="200">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Persona Contacto</label>
+                            <div class="col-sm-10">
+                                <input id="id_personacontacto" type="text" class="form-control entry" name="id_personacontacto" maxlength="200">
+
+                                <a class="help-text"></a>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="button" id="guardar" class="btn btn-block btn-success" disabled><i class="fa fa-save"></i>&nbsp; &nbsp;Guardar</button>
+                            </div>
+                        </div>
+                        <a href="https://localhost:44394/MenuNuevoRegistro/MenuNuevoRegistro" style="background-color:mediumseagreen" class="btn btn-block btn-success">Volver al Menu</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <script type="application/javascript">
+        var formData = new FormData();
+        $('#guardar').click(function(){
+            formData.append("Run",JSON.stringify($('#id_run').val()));
+            formData.append("Nombres",JSON.stringify($('#id_nombre').val()));
+            formData.append("Apellido",JSON.stringify($('#id_apellido').val()));
+            formData.append("Direccion",JSON.stringify($('#id_direccion').val()));
+            formData.append("Telefono",JSON.stringify($('#id_telefono').val()));
+            formData.append("PersonaContacto",JSON.stringify($('#id_personacontacto').val()));
+            formData.append("Giro",JSON.stringify($('#id_giro').val()));
+            formData.append("Email",JSON.stringify($('#id_email').val()));
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GuardarCliente", "Cliente")',
+                    dataType: 'json',
+                    data: formData,
+
+                    cache: false,
+                    contentType: false,
+                    processData: false,  // Important!
+                    success: function (result) {
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                                $('.confirm').click(function () {
+                                    location.href = result.redirectUrl;
+                                });
+                                return
+                    },
+                    error: function (result){
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                    }
+                });
+            });
+        $('.entry').blur(function(){
+                var band=0;
+                $('#form').find("input").each(function(id,obj){
+                    band=0;
+
+                    if($(this).val().length==0) {
+                        band=1;
+                    }
+                    else{
+                    band=0;
+
+                    }
+                    });
+                if(band==0){
+                    $('#guardar').removeAttr('disabled');
+                }
+                else{
+                 $('#guardar').attr('disabled','disabled');
+                }
+                });
+                $('#id_email').blur(function(){
+                    var valida=validarEmail($('#id_email').val());
+                    if(!valida){
+                    $('#id_email_invalido').html("El email no es valido");
+                $('#id_email_invalido').addClass("error");
+                    //swal({ title: "El email no es valido", type: "error"});
+                    }
+                else{
+                    $('#id_email_invalido').html("");
+                $('#id_email_invalido').removeClass("error");
+                }
+                })
+                function validarEmail(valor) {
+                 emailRegex = /^[-\w.%+]{1,64}@@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+                     if (emailRegex.test(valor)) {
+                        return true;
+                    } else {
+                    return false;
+                    }
+        }
+    </script>

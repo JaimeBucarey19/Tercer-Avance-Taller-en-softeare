@@ -1,0 +1,29 @@
+.ca .invoice td {
+    padding: 5px 0;
+}
+
+.ca .invoice .invoice-items {
+    width: 100%;
+}
+
+    .ca .invoice .invoice-items .total td {
+        border-top: 2px solid #333;
+        border-bottom: 2px solid #333;
+        font-weight: 700;
+    }
+
+.ca .alignright {
+    text-align: right;
+}
+
+.ca table td {
+    vertical-align: top;
+}
+
+.ca .invoice .invoice-items td {
+    border-top: #eee 1px solid;
+}
+
+.ca table {
+    margin-left: 10%
+}

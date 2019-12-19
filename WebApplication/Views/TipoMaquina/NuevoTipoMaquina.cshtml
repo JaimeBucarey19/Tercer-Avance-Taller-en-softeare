@@ -1,0 +1,92 @@
+﻿
+
+@{
+    ViewBag.Title = "Nuevo TipoMaquina";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-title">
+                <h5>Nuevo Tipo De Servicio</h5>
+                
+            </div>
+            <div class="ibox-content">
+                <form method="post" id="form" class="form-horizontal">
+
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Descripcion</label>
+                        <div class="col-sm-10">
+                            <input id="id_descripcion" type="text" class="form-control entry" name="id_descripcion" maxlength="200">
+
+                            <a class="help-text"></a>
+
+                        </div>
+                    </div>
+
+                    <br />
+                    <br />
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" id="guardar" class="btn btn-block btn-success" disabled><i class="fa fa-save"></i>&nbsp; &nbsp;Guardar</button>
+                        </div>
+                    </div>
+                    <a href="https://localhost:44394/MenuNuevoRegistro/MenuNuevoRegistro" style="background-color:mediumseagreen" class="btn btn-block btn-success">Volver al Menu</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="application/javascript">
+        var formData = new FormData();
+        $('#guardar').click(function(){
+            formData.append("Descripcion",JSON.stringify($('#id_descripcion').val()));
+
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GuardarTipoMaquina", "TipoMaquina")',
+                    dataType: 'json',
+                    data: formData,
+
+                    cache: false,
+                    contentType: false,
+                    processData: false,  // Important!
+                    success: function (result) {
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                                $('.confirm').click(function () {
+                                    location.href = result.redirectUrl;
+                                });
+                                return
+                    },
+                    error: function (result){
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                    }
+                });
+            });
+     $('.entry').blur(function(){
+                var band=0;
+                $('#form').find("input").each(function(id,obj){
+                    band=0;
+
+                    if($(this).val().length==0) {
+                        band=1;
+                    }
+                    else{
+                    band=0;
+
+                    }
+                    });
+                if(band==0){
+                    $('#guardar').removeAttr('disabled');
+                }
+                else{
+                 $('#guardar').attr('disabled','disabled');
+                }
+                });
+
+
+</script>

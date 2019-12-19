@@ -1,0 +1,183 @@
+﻿@{
+    ViewBag.Title = "Nuevo Pedido";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Ingresar Pedido </h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <form method="post" id="form" class="form-horizontal">
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Cliente</label>
+                            <div class="col-sm-10">
+                                <select class="form-control entry" id="select_cliente">
+                                    <option value="0">Seleccione un Cliente</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Tipo de Servicio</label>
+                            <div class="col-sm-10">
+                                <select class="form-control entry" id="select_tipoServicio">
+                                    <option value="0">Seleccione un Tipo De servicio</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Lugar</label>
+                            <div class="col-sm-10">
+                                <select class="form-control entry" id="select_lugar">
+                                    <option value="0">Seleccione un lugar</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Estado</label>
+                            <div class="col-sm-10">
+                                <input id="id_estado" type="text" class="form-control" name="id_estado" maxlength="200">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Maquina</label>
+                            <div class="col-sm-10">
+                                <select class="form-control entry" id="select_maquina">
+                                    <option value="0">Seleccione una maquina</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group" id="data_1">
+                            <label class="col-sm-2 control-label">Fecha Pedido</label>
+                            <div class="col-sm-8 input-group date">
+                                <span class="input-group-addon" style=""><i class="fa fa-calendar"></i></span>
+                                <input id="fecha_id" class="form-control" name='fecha_rendicion' value="" type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <a href="https://localhost:44394/Menu/Menu" style="background-color:mediumseagreen" class="btn btn-block btn-success">Volver al Menu</a>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" id="guardar" class="btn btn-block btn-success" disabled>&nbsp &nbspSiguiente -->></button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+         
+            </div>
+        </div>
+    </div>
+ </div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var cliente = @Html.Raw(Json.Encode(this.ViewBag.clientes));
+        var tipoServicio = @Html.Raw(Json.Encode(this.ViewBag.tipoServicio));
+        var lugar = @Html.Raw(Json.Encode(this.ViewBag.lugar));
+        var maquina = @Html.Raw(Json.Encode(this.ViewBag.maquina));
+        $("#data_1 .input-group.date").datepicker({
+            format: "dd-mm-yyyy",
+            weekStart: 1,
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: false,
+            autoclose: true,
+            language: "es"
+        });
+        $.each(cliente, function (id, data) {
+            $('#select_cliente').append("<option value='" + data.Id + "'>" + data.Nombre + "</option>");
+        });
+        $.each(tipoServicio, function (id, data) {
+            $('#select_tipoServicio').append("<option value='" + data.Id + "'>" + data.Descripcion + "</option>");
+        });
+        $.each(lugar, function (id, data) {
+            $('#select_lugar').append("<option value='" + data.Id + "'>" + data.Descripcion + "</option>");
+        });
+        $.each(maquina, function (id, data) {
+            $('#select_maquina').append("<option value='" + data.Id + "'>" + data.Nombre + "</option>");
+        });
+    });
+
+</script>
+
+<script type="application/javascript">
+        var formData = new FormData();
+        $('#guardar').click(function(){
+            formData.append("Cliente",JSON.stringify($('#select_cliente').val()));
+            formData.append("TipoServicio",JSON.stringify($('#select_tipoServicio').val()));
+            formData.append("Lugar",JSON.stringify($('#select_lugar').val()));
+            formData.append("Estado",JSON.stringify($('#id_estado').val()));
+            formData.append("Maquina",JSON.stringify($('#select_maquina').val()));
+            formData.append("Fecha",JSON.stringify($('#fecha_id').val()));
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GuardarPedido", "Pedido")',
+                    dataType: 'json',
+                    data: formData,
+
+                    cache: false,
+                    contentType: false,
+                    processData: false,  // Important!
+                    success: function (result) {
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                                $('.confirm').click(function () {
+                                    location.href = result.redirectUrl;
+                                });
+                                return
+                    },
+                    error: function (result){
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                    }
+                });
+            });
+        $('.entry').blur(function(){
+                var band=0;
+                $('#form').find("input").each(function(id,obj){
+                    band=0;
+
+                    if($(this).val().length==0) {
+                        band=1;
+                    }
+                    else{
+                    band=0;
+
+                    }
+                    });
+                if(band==0){
+                    $('#guardar').removeAttr('disabled');
+                }
+                else{
+                 $('#guardar').attr('disabled','disabled');
+                }
+
+                });
+
+    //por mientras
+    $(document).ready(function (){
+    $('#id_estado').val('En Espera');
+      $('#id_estado').attr('disabled','disabled');
+    });
+
+
+</script>

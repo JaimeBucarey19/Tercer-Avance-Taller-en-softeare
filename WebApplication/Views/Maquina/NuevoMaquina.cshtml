@@ -1,0 +1,152 @@
+﻿
+
+@{
+    ViewBag.Title = "Maquina";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-title">
+                <h5>Nuevo Maquina</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <form method="post" id="form" class="form-horizontal">
+
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Patente</label>
+                        <div class="col-sm-10">
+                            <input id="id_patente" type="text" class="form-control entry" name="id_patente" maxlength="13" data-mask="**-**-99">
+
+                            <a class="help-text"></a>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input id="id_nombre" type="text" class="form-control entry" name="id_nombre" maxlength="200">
+
+                            <a class="help-text"></a>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Duenio</label>
+                        <div class="col-sm-10">
+                            <input id="id_duenio" type="text" class="form-control entry" name="id_duenio" maxlength="200">
+
+                            <a class="help-text"></a>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">TipoMaquina</label>
+                        <div class="col-sm-10">
+                            <input id="id_tipoMaquina" type="text" class="form-control entry" name="id_tipoMaquina" maxlength="200">
+
+                            <a class="help-text"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="data_1">
+                        <label class="col-sm-2 control-label">Fecha</label>
+                        <div class="col-sm-8 input-group date">
+                            <span class="input-group-addon" style=""><i class="fa fa-calendar"></i></span>
+                            <input id="id_fecha" class="form-control" name='fecha_rendicion' value="" type="text">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" id="guardar" class="btn btn-block btn-success" disabled><i class="fa fa-save"></i>&nbsp; &nbsp;Guardar</button>
+                        </div>
+                    </div>
+                    <a href="https://localhost:44394/MenuNuevoRegistro/MenuNuevoRegistro" style="background-color:mediumseagreen" class="btn btn-block btn-success">Volver al Menu</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="application/javascript">
+        var formData = new FormData();
+        $('#guardar').click(function(){
+            formData.append("Patente",JSON.stringify($('#id_patente').val()));
+            formData.append("Nombre",JSON.stringify($('#id_nombre').val()));
+            formData.append("Duenio",JSON.stringify($('#id_duenio').val()));
+            formData.append("TipoMaquina",JSON.stringify($('#id_tipoMaquina').val()));
+            formData.append("Seguro",JSON.stringify($('#id_seguro').val()));
+            formData.append("Fecha",JSON.stringify($('#id_fecha').val()));
+
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GuardarMaquina", "Maquina")',
+                    dataType: 'json',
+                    data: formData,
+
+                    cache: false,
+                    contentType: false,
+                    processData: false,  // Important!
+                    success: function (result) {
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                                $('.confirm').click(function () {
+                                    location.href = result.redirectUrl;
+                                });
+                                return
+                    },
+                    error: function (result){
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                    }
+                });
+            });
+
+        $('.entry').blur(function(){
+                var band=0;
+                $('#form').find("input").each(function(id,obj){
+                    band=0;
+
+                    if($(this).val().length==0) {
+                        band=1;
+                    }
+                    else{
+                    band=0;
+
+                    }
+                    });
+                if(band==0){
+                    $('#guardar').removeAttr('disabled');
+                }
+                else{
+                 $('#guardar').attr('disabled','disabled');
+                }
+                });
+
+</script>
+<script type="text/javascript">
+    $("#data_1 .input-group.date").datepicker({
+      format: "dd-mm-yyyy",
+      weekStart: 1,
+      todayBtn: "linked",
+      keyboardNavigation: false,
+      forceParse: false,
+      calendarWeeks: false,
+      autoclose: true,
+      language: "es"
+    });
+
+</script>

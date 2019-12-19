@@ -1,0 +1,6 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+@{Html.RenderPartial((String)ViewBag.ViewName, new ViewDataDictionary(ViewData));}

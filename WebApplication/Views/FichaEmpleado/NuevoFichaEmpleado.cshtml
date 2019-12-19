@@ -1,0 +1,206 @@
+﻿@{
+    ViewBag.Title = "NuevaFichaEmpleado";
+    Layout = "~/Views/Shared/_Base.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox-title">
+                <h5>Nuevo Empleado</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a> 
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-wrench"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <form+ method="post" id="form" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Nombre </label>
+                        <div class="col-sm-10">
+                            <input id="id_nombre" type="text" class="form-control entry" name="id_nombre" maxlength="200">
+                            <a class="help-text"></a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Apellido </label>
+                        <div class="col-sm-10">
+                            <input id="id_apellido" type="text" class="form-control entry" name="id_apellido" maxlength="200">
+                            <a class="help-text"></a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Rut</label>
+                        <div class="col-sm-10">
+                            <input id="id_rut" type="text" class="form-control entry" name="id_rut" maxlength="13" data-mask="99.999.999-*">
+                            <a class="help-text"></a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Telefono</label>
+                        <div class="col-sm-10">
+                            <input id="id_telefono" type="text" class="form-control entry" name="id_telefono" maxlength="11" data-max="+99999999999">
+                            <a class="help-text"></a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input id="id_email" type="text" class="form-control entry" name="id_email" maxlength="50">
+                            <a class="help-text"></a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Direccion</label>
+                        <div class="col-sm-10">
+                            <input id="id_direccion" type="text" class="form-control entry" name="id_direccion" maxlength="200">
+                            <a class="help-text"></a>
+                        </div>
+                    </div>
+
+                  
+                    <div class="form-group" id="data_1">
+                        <label class="col-sm-2 control-label">Fecha Nacimiento</label>
+                        <div class="col-sm-8 input-group date">
+                            <span class="input-group-addon" style=""><i class="fa fa-calendar"></i></span>
+                            <input id="id_edad" class="form-control" name='id_edad' value="" type="text">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Rol</label>
+                        <div class="col-sm-10">
+                            <input id="id_rol" type="text" class="form-control entry" name="id_rol" maxlength="200">
+                            <a class="help-text"></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" id="guardar" class="btn btn-block btn-success" disabled><i class="fa fa-save"></i>&nbsp; &nbsp;Guardar</button>
+                        </div>
+                    </div>
+                    <a href="https://localhost:44394/MenuNuevoRegistro/MenuNuevoRegistro" style="background-color:mediumseagreen" class="btn btn-block btn-success">Volver al Menu</a>
+                </form+>
+            </div>
+        </div>
+        <script type="application/javascript">
+        var formData = new FormData();
+        $('#guardar').click(function(){
+            formData.append("Nombre",JSON.stringify($('#id_nombre').val()));
+            formData.append("Apellido",JSON.stringify($('#id_apellido').val()));
+            formData.append("Rut",JSON.stringify($('#id_rut').val()));
+            formData.append("Telefono",JSON.stringify($('#id_telefono').val()));
+            formData.append("Email",JSON.stringify($('#id_email').val()));
+            formData.append("Direccion",JSON.stringify($('#id_direccion').val()));
+            formData.append("Edad",JSON.stringify($('#id_edad').val()));
+            formData.append("Rol",JSON.stringify($('#id_rol').val()));
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GuardarFichaEmpleado", "FichaEmpleado")',
+                    dataType: 'json',
+                    data: formData,
+
+                    cache: false,
+                    contentType: false,
+                    processData: false,  // Important!
+                    success: function (result) {
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                                $('.confirm').click(function () {
+                                    location.href = result.redirectUrl;
+                                });
+                                return
+                    },
+                    error: function (result){
+                        swal({ title: result.Mensajes.titulo, text: result.Mensajes.msg, type: result.Mensajes.tipo });
+                    }
+                });
+            });
+              $("#data_1 .input-group.date").datepicker({
+                   format: "dd-mm-yyyy",
+                   weekStart: 1,
+                   todayBtn: "linked",
+                   keyboardNavigation: false,
+                   forceParse: false,
+                   calendarWeeks: false,
+                   autoclose: true,
+                   language: "es"
+           });
+             $('#id_email').blur(function(){
+                    var valida=validarEmail($('#id_email').val());
+                    if(!valida){
+                    $('#id_email_invalido').html("El email no es valido");
+                $('#id_email_invalido').addClass("error");
+                    //swal({ title: "El email no es valido", type: "error"});
+                    }
+                else{
+                    $('#id_email_invalido').html("");
+                $('#id_email_invalido').removeClass("error");
+                }
+                })
+                function validarEmail(valor) {
+                 emailRegex = /^[-\w.%+]{1,64}@@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+                     if (emailRegex.test(valor)) {
+                        return true;
+                    } else {
+                    return false;
+                    }
+                }
+
+             $('.entry').blur(function(){
+                var band=0;
+                $('#form').find("input").each(function(id,obj){
+                    band=0;
+
+                    if($(this).val().length==0) {
+                        band=1;
+                    }
+                    else{
+                    band=0;
+
+                    }
+                    });
+                if(band==0){
+                    $('#guardar').removeAttr('disabled');
+                }
+                else{
+                 $('#guardar').attr('disabled','disabled');
+                }
+                });
+                $('#id_email').blur(function(){
+                    var valida=validarEmail($('#id_email').val());
+                    if(!valida){
+                    $('#id_email_invalido').html("El email no es valido");
+                $('#id_email_invalido').addClass("error");
+                    //swal({ title: "El email no es valido", type: "error"});
+                    }
+                else{
+                    $('#id_email_invalido').html("");
+                $('#id_email_invalido').removeClass("error");
+                }
+                })
+                function validarEmail(valor) {
+                 emailRegex = /^[-\w.%+]{1,64}@@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+                     if (emailRegex.test(valor)) {
+                        return true;
+                    } else {
+                    return false;
+                    }
+        }
+
+        </script>
+
+    </div>
+</div>
